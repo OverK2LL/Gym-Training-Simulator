@@ -1,0 +1,671 @@
+if game.PlaceId == 9681073174 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Gym Training Simulator", "BloodTheme")
+ 
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+    MainSection:NewToggle("Autotap", "Taps", function(v)
+        getgenv().autoswing = v
+        while true do
+            if not getgenv().autoswing then return end
+            wait(0.5)
+local args = {
+    [1] = "Tapping"
+}
+
+game:GetService("ReplicatedStorage").Remotes.Tapping:FireServer(unpack(args))
+
+        end
+    end)
+
+MainSection:NewToggle("Auto Train", "Trains - Must be in Training Area", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "Training",
+    [2] = workspace.__WORKSPACE.__Interact.Training
+}
+wait(0.1)
+game:GetService("ReplicatedStorage").Remotes.Training:FireServer(unpack(args))
+end
+end)
+
+    local Rebirths = Window:NewTab("Rebirths")
+    local RebirthsSection = Rebirths:NewSection("Rebirths")
+
+    RebirthsSection:NewToggle("Auto Rebirth 1", "Rebirths", function(v)
+        getgenv().autoswing = v
+        while true do
+            if not getgenv().autoswing then return end
+local args = {
+    [1] = "Rebirths",
+    [2] = 1
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 5", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 2
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 8", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 3
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 15", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 4
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 35", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 5
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 65", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 6
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 95", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 7
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 150", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 8
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 250", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 9
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+
+RebirthsSection:NewToggle("Auto Rebirth 500", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 10
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 900", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 11
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 1.5", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 12
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 2.5k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 13
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 3.5k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 14
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 5.5k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 15
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 8.5k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 16
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 12k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 17
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 15k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 18
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 25k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 19
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 35k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 20
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 45k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 21
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 50k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 22
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 70k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 23
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 80k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 24
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 90k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 25
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 120k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 26
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 150k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 27
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 180k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 28
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 220k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 29
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 280k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 30
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 320k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 31
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 420k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 32
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 520k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 33
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 820k", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 34
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 1.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 35
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 2.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 36
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 4.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 37
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 8.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 38
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 12.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 39
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 15.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 40
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 25.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 41
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 55.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 42
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 100.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 43
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 200.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 44
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 450.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 45
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 950.82M", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 46
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 1.3B", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 47
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+RebirthsSection:NewToggle("Auto Rebirth 1.95B", "Rebirths", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+[1] = "Rebirths",
+[2] = 48
+}
+wait(1)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end
+end)
+
+local Boosts = Window:NewTab("Boosts")
+local BoostsSection = Boosts:NewSection("Boosts")
+
+BoostsSection:NewButton("X2 Energy", "Uses Energy Boost", function()
+
+local args = {
+    [1] = "Boosts",
+    [2] = "x2Energy"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+end)
+
+BoostsSection:NewButton("X2 Gems", "Uses Gem Boost", function()
+
+local args = {
+    [1] = "Boosts",
+    [2] = "x2Gems"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+
+end)
+
+BoostsSection:NewButton("X2 Training", "Uses Training Boost", function()
+
+local args = {
+    [1] = "Boosts",
+    [2] = "x2Training"
+}
+
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+
+end)
+
+
+
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Misc")
+
+MiscSection:NewButton("Daily Rewards", "Gets Daily Reward", function()
+    local args = {
+        [1] = "Daily"
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end)
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("OverK2ll#3442 - Not the best but enjoy!")
+
+end
