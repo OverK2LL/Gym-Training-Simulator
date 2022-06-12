@@ -6,7 +6,7 @@ if game.PlaceId == 9681073174 then
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
 
-    MainSection:NewToggle("Autotap", "Taps", function(v)
+    MainSection:NewToggle("Auto Swing", "Taps", function(v)
         getgenv().autoswing = v
         while true do
             if not getgenv().autoswing then return end
@@ -33,6 +33,11 @@ game:GetService("ReplicatedStorage").Remotes.Training:FireServer(unpack(args))
 end
 end)
 
+
+-- Rebirths
+
+
+
     local Rebirths = Window:NewTab("Rebirths")
     local RebirthsSection = Rebirths:NewSection("Rebirths")
 
@@ -40,12 +45,15 @@ end)
         getgenv().autoswing = v
         while true do
             if not getgenv().autoswing then return end
+
 local args = {
-    [1] = "Rebirths",
-    [2] = 1
+    [1] = {
+        [1] = 1
+    }
 }
+
+game:GetService("ReplicatedStorage").Assets.Events.rebirth:FireServer(unpack(args))
 wait(1)
-game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 5", "Rebirths", function(v)
@@ -169,7 +177,7 @@ wait(1)
 game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
 end
 end)
-RebirthsSection:NewToggle("Auto Rebirth 1.5", "Rebirths", function(v)
+RebirthsSection:NewToggle("Auto Rebirth 1.5k", "Rebirths", function(v)
     getgenv().autoswing = v
     while true do
         if not getgenv().autoswing then return end
@@ -613,6 +621,180 @@ wait(1)
 game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
 end
 end)
+
+local Eggs = Window:NewTab("Eggs")
+local EggsSection = Eggs:NewSection("Eggs")
+
+EggsSection:NewToggle("Basic Egg", "Opens Egg", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "EGG",
+    [2] = {
+        [1] = workspace.__WORKSPACE.__Eggs:FindFirstChild("Basic Egg"),
+        [2] = 1,
+        [3] = {}
+    }
+}
+wait(0.7)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+    end
+end)
+
+EggsSection:NewToggle("Earth Egg", "Opens Egg", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "EGG",
+    [2] = {
+        [1] = workspace.__WORKSPACE.__Eggs:FindFirstChild("Earth Egg"),
+        [2] = 1,
+        [3] = {}
+    }
+}
+wait(0.7)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+    end
+end)
+
+EggsSection:NewToggle("Enchanted Egg", "Opens Egg", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "EGG",
+    [2] = {
+        [1] = workspace.__WORKSPACE.__Eggs:FindFirstChild("Enchanted Egg"),
+        [2] = 1,
+        [3] = {}
+    }
+}
+wait(0.7)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+    end
+end)
+
+EggsSection:NewToggle("Temple Egg", "Opens Egg", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "EGG",
+    [2] = {
+        [1] = workspace.__WORKSPACE.__Eggs:FindFirstChild("Temple Egg"),
+        [2] = 1,
+        [3] = {}
+    }
+}
+wait(0.7)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+    end
+end)
+
+EggsSection:NewToggle("Beach Egg", "Opens Egg", function(v)
+    getgenv().autoswing = v
+    while true do
+        if not getgenv().autoswing then return end
+local args = {
+    [1] = "EGG",
+    [2] = {
+        [1] = workspace.__WORKSPACE.__Eggs:FindFirstChild("Beach Egg"),
+        [2] = 1,
+        [3] = {}
+    }
+}
+wait(0.7)
+game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+
+    end
+end)
+
+EggsSection:NewLabel("Must Be Near Egg To Auto Open")
+
+local PurchaseIsland = Window:NewTab("Purchase Island")
+local PurchaseIslandSection = PurchaseIsland:NewSection("Purchase Island")
+
+PurchaseIslandSection:NewLabel("IMPORTANT: Doesn't Teleport To Island. Buys Only.")
+
+PurchaseIslandSection:NewButton("Training Center", "Teleports To Island", function()
+   
+    local args = {
+        [1] = "Areas",
+        [2] = 1
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+    
+    end)
+
+    PurchaseIslandSection:NewButton("Little Island", "Teleports To Island", function()
+
+    local args = {
+        [1] = "Areas",
+        [2] = 2
+    }
+    
+    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+    
+    end)
+    PurchaseIslandSection:NewButton("Enchanted Island", "Teleports To Island", function()
+
+        local args = {
+            [1] = "Areas",
+            [2] = 3
+        }
+        
+        game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+        
+        end)
+        PurchaseIslandSection:NewButton("Temple Island", "Teleports To Island", function()
+
+            local args = {
+                [1] = "Areas",
+                [2] = 4
+            }
+            
+            game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+            
+            end)
+            PurchaseIslandSection:NewButton("Mythical Island", "Teleports To Island", function()
+
+                local args = {
+                    [1] = "Areas",
+                    [2] = 5
+                }
+                
+                game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+                
+                end)
+                PurchaseIslandSection:NewButton("Beach Island", "Teleports To Island", function()
+
+                    local args = {
+                        [1] = "Areas",
+                        [2] = 6
+                    }
+                    
+                    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+                    
+                    end)
+                    PurchaseIslandSection:NewButton("Flower Island", "Teleports To Island", function()
+
+                        local args = {
+                            [1] = "Areas",
+                            [2] = 7
+                        }
+                        
+                        game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
+                        
+                        end)
+
+
 
 local Boosts = Window:NewTab("Boosts")
 local BoostsSection = Boosts:NewSection("Boosts")
