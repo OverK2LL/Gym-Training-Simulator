@@ -717,82 +717,36 @@ end)
 
 EggsSection:NewLabel("Must Be Near Egg To Auto Open")
 
-local PurchaseIsland = Window:NewTab("Purchase Island")
-local PurchaseIslandSection = PurchaseIsland:NewSection("Purchase Island")
+local Teleport = Window:NewTab("Teleport")
+local TeleportSection = Teleport:NewSection("Teleport")
 
-PurchaseIslandSection:NewLabel("IMPORTANT: Doesn't Teleport To Island. Buys Only.")
+TeleportSection:NewButton("Training Center", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.1437531, -18.067585, -43.2826233, -0.394414037, 4.92793291e-08, -0.918932855, 7.88354981e-08, 1, 1.97898054e-08, 0.918932855, -6.46391527e-08, -0.394414037)        
+end)
 
-PurchaseIslandSection:NewButton("Training Center", "Teleports To Island", function()
-   
-    local args = {
-        [1] = "Areas",
-        [2] = 1
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-    
-    end)
+TeleportSection:NewButton("Little Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1604.73181, -22.6579571, -909.715576, 0.549066246, 4.5118334e-08, -0.835778832, 2.87228534e-08, 1, 7.28531049e-08, 0.835778832, -6.4007132e-08, 0.549066246)        
+end)
 
-    PurchaseIslandSection:NewButton("Little Island", "Teleports To Island", function()
+TeleportSection:NewButton("Enchanted Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1126.19702, -21.7013779, 1048.29089, -0.804960012, -2.02368389e-09, -0.593329072, -2.05420347e-09, 1, -6.23823049e-10, 0.593329072, 7.16666004e-10, -0.804960012)        
+end)
 
-    local args = {
-        [1] = "Areas",
-        [2] = 2
-    }
-    
-    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-    
-    end)
-    PurchaseIslandSection:NewButton("Enchanted Island", "Teleports To Island", function()
+TeleportSection:NewButton("Temple Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-787.519653, -21.7013741, 3036.61108, -0.93415159, 5.01755615e-08, 0.356876373, 2.27398953e-08, 1, -8.10730398e-08, -0.356876373, -6.76191831e-08, -0.93415159)        
+end)
 
-        local args = {
-            [1] = "Areas",
-            [2] = 3
-        }
-        
-        game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-        
-        end)
-        PurchaseIslandSection:NewButton("Temple Island", "Teleports To Island", function()
+TeleportSection:NewButton("Mythical Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(717.495361, -22.657877, 2485.50391, -0.998648882, 6.21945562e-09, 0.05196587, 1.2279199e-08, 1, 1.16290792e-07, -0.05196587, 1.16771766e-07, -0.998648882)        
+end)
 
-            local args = {
-                [1] = "Areas",
-                [2] = 4
-            }
-            
-            game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-            
-            end)
-            PurchaseIslandSection:NewButton("Mythical Island", "Teleports To Island", function()
+TeleportSection:NewButton("Beach Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2527.0354, -22.6579781, -3129.23926, 0.507229149, 5.14805762e-08, -0.861811221, 1.85350455e-08, 1, 7.06443473e-08, 0.861811221, -5.18065839e-08, 0.507229149)        
+end)
 
-                local args = {
-                    [1] = "Areas",
-                    [2] = 5
-                }
-                
-                game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-                
-                end)
-                PurchaseIslandSection:NewButton("Beach Island", "Teleports To Island", function()
-
-                    local args = {
-                        [1] = "Areas",
-                        [2] = 6
-                    }
-                    
-                    game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-                    
-                    end)
-                    PurchaseIslandSection:NewButton("Flower Island", "Teleports To Island", function()
-
-                        local args = {
-                            [1] = "Areas",
-                            [2] = 7
-                        }
-                        
-                        game:GetService("ReplicatedStorage").Remotes.ClientRefeshFunction:InvokeServer(unpack(args))
-                        
-                        end)
+TeleportSection:NewButton("Flower Island", "Teleports", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-330.967194, -22.6578541, 5212.95117, -0.0743087754, -2.86655482e-08, -0.997235298, -6.44192211e-09, 1, -2.8265001e-08, 0.997235298, 4.32377467e-09, -0.0743087754)        
+end)
 
 
 
@@ -845,6 +799,10 @@ MiscSection:NewButton("Daily Rewards", "Gets Daily Reward", function()
     }
     
     game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args))
+end)
+
+MiscSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
 end)
 
 local Credits = Window:NewTab("Credits")
