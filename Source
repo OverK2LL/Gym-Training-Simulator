@@ -21,9 +21,9 @@ game:GetService("ReplicatedStorage").Remotes.Tapping:FireServer(unpack(args))
     end)
 
 MainSection:NewToggle("Auto Train", "Trains - Must be in Training Area", function(v)
-    getgenv().autoswing = v
+    getgenv().autoclick = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autoclick then return end
 local args = {
     [1] = "Training",
     [2] = workspace.__WORKSPACE.__Interact.Training
@@ -42,9 +42,9 @@ end)
     local RebirthsSection = Rebirths:NewSection("Rebirths")
 
     RebirthsSection:NewToggle("Auto Rebirth 1", "Rebirths", function(v)
-        getgenv().autoswing = v
+        getgenv().autotap = v
         while true do
-            if not getgenv().autoswing then return end
+            if not getgenv().autotap then return end
 
 local args = {
     [1] = {
@@ -57,9 +57,9 @@ wait(1)
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 5", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 2
@@ -69,9 +69,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 8", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 3
@@ -81,9 +81,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 15", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 4
@@ -93,9 +93,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 35", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 5
@@ -105,9 +105,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 65", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 6
@@ -117,9 +117,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 95", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 7
@@ -129,9 +129,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 150", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 8
@@ -141,9 +141,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 250", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 9
@@ -154,9 +154,9 @@ end
 end)
 
 RebirthsSection:NewToggle("Auto Rebirth 500", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 10
@@ -166,9 +166,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 900", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 11
@@ -178,9 +178,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 1.5k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 12
@@ -190,9 +190,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 2.5k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 13
@@ -202,9 +202,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 3.5k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 14
@@ -214,9 +214,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 5.5k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 15
@@ -226,9 +226,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 8.5k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 16
@@ -238,9 +238,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 12k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 17
@@ -250,9 +250,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 15k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 18
@@ -262,9 +262,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 25k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 19
@@ -274,9 +274,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 35k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 20
@@ -286,9 +286,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 45k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 21
@@ -298,9 +298,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 50k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 22
@@ -310,9 +310,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 70k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 23
@@ -322,9 +322,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 80k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 24
@@ -334,9 +334,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 90k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 25
@@ -346,9 +346,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 120k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 26
@@ -358,9 +358,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 150k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 27
@@ -370,9 +370,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 180k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 28
@@ -382,9 +382,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 220k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 29
@@ -394,9 +394,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 280k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 30
@@ -406,9 +406,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 320k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 31
@@ -418,9 +418,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 420k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 32
@@ -430,9 +430,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 520k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 33
@@ -442,9 +442,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 820k", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 34
@@ -454,9 +454,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 1.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 35
@@ -466,9 +466,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 2.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 36
@@ -478,9 +478,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 4.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 37
@@ -490,9 +490,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 8.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 38
@@ -502,9 +502,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 12.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 39
@@ -514,9 +514,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 15.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 40
@@ -526,9 +526,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 25.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 41
@@ -538,9 +538,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 55.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 42
@@ -550,9 +550,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 100.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 43
@@ -562,9 +562,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 200.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 44
@@ -574,9 +574,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 450.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 45
@@ -586,9 +586,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 950.82M", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 46
@@ -598,9 +598,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 1.3B", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 47
@@ -610,9 +610,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end
 end)
 RebirthsSection:NewToggle("Auto Rebirth 1.95B", "Rebirths", function(v)
-    getgenv().autoswing = v
+    getgenv().autotap = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autotap then return end
 local args = {
 [1] = "Rebirths",
 [2] = 48
@@ -626,9 +626,9 @@ local Eggs = Window:NewTab("Eggs")
 local EggsSection = Eggs:NewSection("Eggs")
 
 EggsSection:NewToggle("Basic Egg", "Opens Egg", function(v)
-    getgenv().autoswing = v
+    getgenv().autohit = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autohit then return end
 local args = {
     [1] = "EGG",
     [2] = {
@@ -644,9 +644,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end)
 
 EggsSection:NewToggle("Earth Egg", "Opens Egg", function(v)
-    getgenv().autoswing = v
+    getgenv().autohit = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autohit then return end
 local args = {
     [1] = "EGG",
     [2] = {
@@ -662,9 +662,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end)
 
 EggsSection:NewToggle("Enchanted Egg", "Opens Egg", function(v)
-    getgenv().autoswing = v
+    getgenv().autohit = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autohit then return end
 local args = {
     [1] = "EGG",
     [2] = {
@@ -680,9 +680,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end)
 
 EggsSection:NewToggle("Temple Egg", "Opens Egg", function(v)
-    getgenv().autoswing = v
+    getgenv().autohit = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autohit then return end
 local args = {
     [1] = "EGG",
     [2] = {
@@ -698,9 +698,9 @@ game:GetService("ReplicatedStorage").Remotes.RefeshClient:FireServer(unpack(args
 end)
 
 EggsSection:NewToggle("Beach Egg", "Opens Egg", function(v)
-    getgenv().autoswing = v
+    getgenv().autohit = v
     while true do
-        if not getgenv().autoswing then return end
+        if not getgenv().autohit then return end
 local args = {
     [1] = "EGG",
     [2] = {
